@@ -18,4 +18,9 @@ public class ServerNameGenerator {
     public static String getRandomElementFromArray(String[] stringArray){
         return stringArray[(int)(Math.random()*(stringArray.length-1)+1)];
     }
+
+    public static void main(String[] args) {
+        System.out.println("Here is your server name:");
+        System.out.printf("%s-%s", getRandomElementFromArray(nounArray), getRandomElementFromArray(adjectiveArray));
+    }
 }
