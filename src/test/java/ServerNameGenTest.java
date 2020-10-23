@@ -15,4 +15,10 @@ public class ServerNameGenTest {
         assertEquals("Ensure the adjective array has 10 items", 10, ServerNameGenerator.getAdjectiveArray().length, 0);
         assertEquals("Ensure the last item of the adj array is 'graceful'", "graceful", ServerNameGenerator.getAdjectiveArray()[9]);
     }
+
+    @Test
+    public void testRandomElementFromArray(){
+        assertTrue(ServerNameGenerator.getRandomElementFromArray(ServerNameGenerator.getNounArray()).length() >= 3);
+        assertTrue(ServerNameGenerator.getRandomElementFromArray(ServerNameGenerator.getAdjectiveArray()).length() <= 9);
+    }
 }

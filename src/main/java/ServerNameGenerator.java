@@ -14,4 +14,8 @@ public class ServerNameGenerator {
     public static String[] getAdjectiveArray() {
         return adjectiveArray;
     }
+
+    public static String getRandomElementFromArray(String[] stringArray){
+        return stringArray[(int)(Math.random()*(stringArray.length-1)+1)];
+    }
 }
