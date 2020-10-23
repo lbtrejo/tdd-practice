@@ -10,4 +10,8 @@ public class ServerNameGenerator {
     public static String[] getNounArray() {
         return nounArray;
     }
+
+    public static String[] getAdjectiveArray() {
+        return adjectiveArray;
+    }
 }
